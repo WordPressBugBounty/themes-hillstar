@@ -147,11 +147,16 @@ hillstar_theme()
         'flex-width' 	=> true,
         'width' 		=> 150,
         'height' 		=> 70,
-    ))
-    ->register_menus(array(
+    ));
+
+add_action('init', function() {
+    hillstar_theme()->register_menus(array(
         'header-menu' => esc_html__('Header Menu', 'hillstar'),
         'footer-menu' => esc_html__('Footer Menu', 'hillstar'),
     ));
+
+}, 1);
+
 
 
 add_action('widgets_init', 'hillstar_register_sidebars');

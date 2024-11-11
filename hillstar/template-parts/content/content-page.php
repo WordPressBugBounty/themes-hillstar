@@ -2,6 +2,8 @@
   <div>
    <?php 
    		the_content(); 
+        hillstar_render_page_comments();
+
    		wp_link_pages(array(
           'before'      => '<div class="page-links"><span class="page-links-title">' . __('Pages:', 'hillstar') . '</span>',
           'after'       => '</div>',
