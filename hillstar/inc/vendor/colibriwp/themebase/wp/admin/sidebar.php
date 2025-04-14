@@ -27,7 +27,7 @@ $info_page_docs_link = Hooks::prefixed_apply_filters( 'info_page_docs_link',
         <p class="colibri-admin-sidebar__section__description">
             <?php Translations::escHtmlE( 'admin_sidebar_documentation_description' ); ?>
         </p>
-        <a href="<?php echo esc_attr( $info_page_docs_link ); ?>" target="_blank"
+        <a href="<?php echo esc_url( $info_page_docs_link ); ?>" target="_blank"
            class="button button-primary">
             <?php Translations::escHtmlE( 'admin_sidebar_documentation_action' ); ?>
         </a>
@@ -40,7 +40,7 @@ $info_page_docs_link = Hooks::prefixed_apply_filters( 'info_page_docs_link',
         <p class="colibri-admin-sidebar__section__description">
             <?php Translations::escHtmlE( 'admin_sidebar_support_description' ); ?>
         </p>
-        <a href="<?php echo esc_attr( $info_page_support_link ); ?>" target="_blank"
+        <a href="<?php echo esc_url( $info_page_support_link ); ?>" target="_blank"
            class="button button-primary">
             <?php Translations::escHtmlE( 'admin_sidebar_support_action' ); ?>
         </a>

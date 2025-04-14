@@ -28,7 +28,7 @@ class MainContent extends ComponentBase {
 					),
 				),
 
-				/*"blog_posts_per_row" => array(
+				"blog_posts_per_row" => array(
 					'transport' => 'refresh',
 					'default'   => Defaults::get( "blog_posts_per_row" ),
 					'control'   => array(
@@ -45,7 +45,7 @@ class MainContent extends ComponentBase {
 						),
 						'none_value'  => '',
 					)
-				),*/
+				),
 
 				"{$prefix}separator1" => array(
 					'transport' => 'refresh',
