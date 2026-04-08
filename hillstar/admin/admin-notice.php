@@ -4,6 +4,7 @@ use ColibriWP\Theme\Core\Hooks;
 use ColibriWP\Theme\Core\Utils;
 use ColibriWP\Theme\Defaults;
 use ColibriWP\Theme\Translations;
+use HillstarTheme\SiteLeadsThemeKit\SiteLeads;
 
 $hillstar_front_page_designs = array();
 $hillstar_slug        = "colibri-wp-page-info";
@@ -117,11 +118,9 @@ wp_localize_script( $hillstar_slug, 'colibri_get_started', $colibri_get_started 
                     </div>
                 </div>
                 <div>
-                    <p class="description large-text">
-                        <?php esc_html_e( 'This action will also install the Colibri Page Builder plugin.',
-                            'hillstar' ); ?>
-                    </p>
+                    <?php echo SiteLeads::getInstallCompanioNoticeDescriptionInWPAdminWithSiteLeadsCheck() // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped?>
                 </div>
+
             </div>
         </div>
 
